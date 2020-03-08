@@ -1,4 +1,6 @@
-node_modules/
-elm-stuff/
+.idea
+node_modules
+elm-stuff
+.vscode
 .cache
-dist
+

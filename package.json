@@ -1,16 +1,22 @@
 {
-  "name": "parcelApp",
+  "name": "parcel_app",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "parcel index.html",
+    "elm-live": "elm-live src/Main.elm -Hou --debug -- --output=elm.js",
+    "dist": "./optimize.sh src/Main.elm"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "elm": "^0.19.1-3",
     "elm-hot": "^1.1.4",
-    "node-elm-compiler": "^5.0.4"
+    "elm-live": "^4.0.0-rc.1",
+    "node-elm-compiler": "^5.0.4",
+    "parcel-bundler": "^1.12.4",
+    "uglifyjs": "^2.4.11"
   }
 }
