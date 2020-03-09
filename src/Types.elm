@@ -1,6 +1,6 @@
 module Types exposing (AuthenticationStatus(..), ErrorMsg(..), FollowedUser(..), Model, Msg(..), Token(..), User, UserId(..))
 
-import Animation exposing (px)
+import Animation
 import Browser.Navigation exposing (Key)
 import Http
 import Url exposing (Url)

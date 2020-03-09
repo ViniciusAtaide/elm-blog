@@ -1,6 +1,6 @@
 port module Main exposing (main)
 
-import Animation exposing (px)
+import Animation
 import Api
 import Browser exposing (UrlRequest(..))
 import Browser.Navigation as Navigation exposing (Key)

@@ -1,6 +1,6 @@
 module View exposing (body, header)
 
-import Animation exposing (px)
+import Animation
 import Element as E exposing (Element)
 import Element.Background as Background
 import Element.Border as Border
@@ -119,7 +119,7 @@ header authStatus =
 
 body : Animation.State -> Maybe ErrorMsg -> Element Msg
 body style error =
-    E.column [ E.htmlAttribute List.head <| Animation.render style ]
+    E.column (List.map E.htmlAttribute <| Animation.render style)
         [ case error of
             Just (ErrorMsg err) ->
                 E.el [] <|
